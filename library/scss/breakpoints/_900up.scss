@@ -1,0 +1,63 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: 600px and Up Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	.widget {
+		ul {
+			li {
+				a:after {
+					content: "";
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+					width: 120%;
+				  height: 160%;
+				  background: $light-gray;
+				  z-index: -1;
+				  transform-origin: 0% 0%;
+				  transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
+					transform: translateY(10%) translateX(-108%) rotate(-45deg);
+				  transition: transform .2s;
+				}
+				a:hover:after {
+					transform: translateY(10%) translateX(-41%) rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+/*********************
+FOOTER STYLES
+*********************/
+
+.colophon {
+	flex-basis: initial;
+  align-items: initial;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  p {
+    text-align: right;
+  }
+}
+.footer {
+  nav {
+		flex-direction: row;
+		flex-wrap: initial;
+  }
+}

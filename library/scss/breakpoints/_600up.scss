@@ -1,0 +1,65 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: 600px and Up Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.wrap {
+	width: 96%;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+  margin-bottom: 20px;
+}
+.footer {
+  margin-top: 62px;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+.hentry {
+  header:not(.comment-author) {
+    margin: 0.5em;
+  }
+}
+
+.entry-content {
+  padding: 1.5em 1.5em 0;
+}
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+.comment {
+	padding: 1.5em;
+}
+
+.comment-respond {
+	padding: 1.5em;
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.colophon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

@@ -1,0 +1,1127 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: $text-color;
+	background-color: $gray;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+// .home .wrap {
+// 	width: 98%;
+// }
+h1, h2, h3, h4, h5, h6 {
+	font-family: $serif;
+}
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
+.home {}                          /* home page */
+.blog {}                          /* blog template page */
+.archive {}                       /* archive page */
+.date {}                          /* date archive page */
+	.date-paged-1 {}                /* replace the number to the corresponding page number */
+.search {													/* search page */
+	h2.search-title {
+		line-height: 1.2em;
+	}
+}
+	.search-results {}              /* search result page */
+	.search-no-results {}           /* no results search page */
+	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
+.error404 {}                      /* 404 page */
+.single {}                        /* single post page */
+	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
+	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
+.attachment {}                    /* attatchment page */
+	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
+	.attachment-mime-type {}        /* style mime type pages */
+.author {}                        /* author page */
+	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
+	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {}                      /* category page */
+	.category-1 {}                  /* individual category page (i.e. body.category-6) */
+	.category-paged-1 {}            /* replace the number to the corresponding page number */
+.tag {}                           /* tag page */
+	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
+	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
+.page-template {}                 /* custom page template page */
+	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
+	.page-paged-1 {}                /* replace the number to the corresponding page number */
+	.page-parent {}                 /* parent page template */
+	.page-child {}                  /* child page template */
+	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
+.logged-in {}                     /* if user is logged in */
+.paged {}                         /* paged items like search results or archives */
+	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	color: $red;
+	text-decoration: none;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+		outline: none;
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 1.875em;
+	line-height: 1.25em;
+	letter-spacing: -1px;
+}
+
+h2, .h2 {
+	font-size: 1.625em;
+	line-height: 1.3em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.375em;
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	background-color: $black;
+	.header-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+	}
+}
+
+	#logo {
+		margin: 0.75em 0;
+		font-size: 1.5em;
+		flex: 1 0 90%;
+		img {
+			max-width: 30%;
+		}
+	}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+.nav {
+	border-bottom: 0;
+	margin: 0;
+
+	li {
+
+		a {
+			display: block;
+			color: $white;
+			padding: 0.75em;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+				color: $white;
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top:0;
+			li {
+
+				a {
+					padding-left: 30px;
+					color: $gray;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+.menu-button {
+  display: inline-block;
+  cursor: pointer;
+	z-index: 2;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.nav-open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-7px, 7px) ;
+}
+
+/* Fade out the second bar */
+.nav-open .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.nav-open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -9px) ;
+}
+
+nav.main-menu {
+	height: 40px;
+	border-bottom: 0;
+	display: none;
+	flex: 1 1 100%;
+	&.nav-open {
+		height: auto;
+		display: block;
+
+		ul {
+			display: block;
+			padding: 0;
+			margin: 0;
+		}
+
+		li:hover {
+			a {
+				color: $red;
+			}
+		}
+	}
+
+	ul {
+		display: none;
+		height: auto;
+	}
+
+	li {
+		display: block;
+		width: 100%;
+	}
+
+	 a:hover {
+		color: $red;
+	}
+
+} //nav
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	margin-top: 1.5em;
+}
+
+		.hentry {
+			background-color: $white;
+			margin-bottom: 1.5em;
+			header {
+				border-bottom: 1px solid $light-gray;
+				padding: 1em;
+			}
+
+			footer {
+				padding: 1.5em;
+				border-top: 1px solid $light-gray;
+				margin-top: 20px;
+				p {
+					margin: 0;
+				}
+			}
+
+		} /* end .hentry */
+
+		.single-title,
+		.page-title,
+		.entry-title {
+			margin: 0;
+			a {
+				color: #373737;
+				&:hover {
+					color: #FF4C4C;
+				}
+			}
+		}
+
+		.single-title {}
+
+		.page-title {}
+
+		.entry-title {}
+
+		.archive-title {}
+
+		/* want to style individual post classes? Booya! */
+		.post-id {}         /* post by id (i.e. post-3) */
+		.post {}            /* general post style */
+		.page {}            /* general article on a page style */
+		.attachment {}      /* general style on an attatchment */
+		.sticky {}          /* sticky post style */
+		.hentry {}          /* hentry class */
+		.category-slug {}   /* style by category (i.e. category-videos) */
+		.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+		/* post meta */
+		.entry-meta {
+			time {
+				margin-right: 1em;
+			}
+			i {
+				margin-right: 2px;
+			}
+		}
+		.byline {
+			color: $meta-gray;
+			font-style: italic;
+			margin: 0;
+			font-size: 0.8em;
+			time {}
+		}
+
+		/* entry content */
+		.entry-content {
+			padding: 1em 1em 0;
+
+			p {
+				margin: 0 0 1.5em;
+				line-height: 1.5;
+				&+ ul,
+				&+ ol {
+					padding: 0 0 0 1.625em;
+					margin-bottom: 1.4em;
+				}
+			}
+			h2, h3 {
+				&+ ul,
+				&+ ol {
+					padding: 0 0 0 1.625em;
+					margin-bottom: 1.4em;
+				}
+			}
+
+
+
+			ul, ol, table, dl {}
+
+			ul, ol {
+
+				li {}
+
+			}
+
+			ul {
+
+				li {}
+
+			}
+
+			ol {
+
+				li {}
+
+			}
+
+			table {
+				width: 100%;
+				border: 1px solid $gray;
+				margin-bottom: 1.5em;
+
+				caption {
+					margin: 0 0 7px;
+					font-size: 0.75em;
+					color: $meta-gray;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+				}
+			}
+
+			tr {
+				border-bottom: 1px solid $gray;
+
+				&:nth-child(even) {
+					background-color: $light-gray;
+				}
+			}
+
+			td {
+				padding: 7px;
+				border-right: 1px solid $gray;
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			th {
+				background-color: $light-gray;
+				border-bottom: 1px solid $gray;
+				border-right: 1px solid $gray;
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			blockquote {
+				font-style: italic;
+  			border-left: 1px solid #373737;
+			  margin: 2.5em 10px 2.5em 3.4em;
+			  padding: 0.5em 10px;
+			  quotes: "\201C""\201D""\2018""\2019";
+
+				&:before {
+					font-family: "Montserrat";
+					content: '\201c';
+					position: absolute;
+					margin-top: 0.4em;
+					margin-left: -1em;
+					font-size: 4em;
+					line-height: 0.1em;
+					color: #373737;
+				}
+				p:last-of-type {
+					margin-bottom: 0.5em;
+				}
+
+			}
+
+			dl {}
+
+			dt {}
+
+			dd {
+				margin-left: 0;
+				font-size: 0.9em;
+				color: #787878;
+				margin-bottom: 1.5em;
+			}
+
+			img {
+				margin: 0.5em 0 2em 0;
+				max-width: 100%;
+				height: auto;
+			}
+
+			/*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+			.alignleft, img.alignleft {}
+			.alignright, img.alignright {}
+			.aligncenter, img.aligncenter {}
+
+			.size-auto,
+			.size-full,
+			.size-large,
+			.size-medium,
+			.size-thumbnail {
+				max-width: 100%;
+				height: auto;
+			}
+
+			pre {
+				background: $black;
+				color: $light-gray;
+				font-size: 0.9em;
+				padding: 1.5em;
+				margin: 0 0 1.5em;
+				border-radius: 3px;
+			}
+
+		} /* end .entry-content */
+
+		.wp-caption {
+			max-width: 100%;
+			background: #eee;
+			padding: 5px;
+
+			/* images inside wp-caption */
+			img {
+				max-width: 100%;
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			p.wp-caption-text {
+				font-size: 0.85em;
+				margin: 4px 0 7px;
+				text-align: center;
+			}
+
+		} /* end .wp-caption */
+
+		/* image gallery styles */
+		.gallery {
+
+			dl {
+
+				a {}
+
+				img {}
+
+			}
+
+			dt {}
+
+			dd {}
+
+		} /* end .gallery */
+
+		/* gallery caption styles */
+		.gallery-caption {}
+
+		.size-full {}
+		.size-large {}
+		.size-medium {}
+		.size-thumbnail {}
+
+	// the tag output
+	.tags {
+		margin: 0;
+	}
+
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+
+.pagination,
+.wp-prev-next {
+	margin: 1.5em 0;
+}
+	.pagination{
+    text-align: center;
+
+    ul {
+      display: inline-block;
+      background-color: $white;
+      white-space: nowrap;
+      padding: 0;
+      clear: both;
+      border-radius: 3px;
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+      float: left;
+      display: inline;
+      overflow: hidden;
+      border-right: 1px solid $gray;
+    }
+
+    a, span {
+      margin: 0;
+      padding: 0;
+      line-height: 1em;
+      font-size: 1em;
+      font-weight: normal;
+      padding: 0.75em;
+      min-width: 1em;
+      display: block;
+      color: $blue;
+
+      &:hover, &:focus {
+      	background-color: $blue;
+      	color: $white;
+      }
+    }
+
+    .current{
+    	cursor: default;
+    	color: $text-color;
+
+    	&:hover, &:focus {
+    		background-color: $white;
+    		color: $text-color;
+    	}
+    }
+
+  } /* end .bones_page_navi */
+
+	/* fallback previous & next links */
+	.wp-prev-next {
+
+		ul {}
+
+		.prev-link {
+			float: left;
+		}
+
+		.next-link {
+			float: right;
+		}
+
+	} /* end .wp-prev-next */
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+
+/* h3 comment title */
+#comments-title {
+	padding: 0.75em;
+	margin: 0;
+	border-top: 1px solid $light-gray;
+
+	/* number of comments span */
+	span {}
+
+}
+
+.comment-nav {
+
+	ul {
+
+		li {}
+
+	}
+}
+
+
+.commentlist {
+	margin: 0;
+	list-style-type: none;
+}
+
+.comment {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	padding: 1em;
+	border-bottom: 1px solid $light-gray;
+
+	.comment-author {
+		padding: 7px 7px 7px 0;
+		border: 0;
+	}
+
+	/* vcard */
+	.vcard {
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			display: block;
+			font-size: 0.9em;
+			font-style: italic;
+
+			a {
+				color: $meta-gray;
+			}
+
+		}
+
+		.photo {}
+
+		.avatar {
+			position: absolute;
+			left: 16px;
+			border-radius: 50%;
+		}
+
+	} /* end .commentlist .vcard */
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.children {
+		margin: 0;
+
+		li {}
+
+			/* variations */
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           /* change number for different depth */
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+	} /* end children */
+
+
+	&[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	&.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	&:not(.depth-1) {
+		margin-top: 0;
+		margin-left: 7px;
+		padding: 7px;
+	}
+
+	&.depth-2 {}
+	&.depth-3 {}
+	&.depth-4 {}
+	&.depth-5 {}
+
+	/* general comment classes */
+	&.alt {}
+	&.odd {
+		background-color: $white;
+	}
+	&.even {
+		background: $light-gray;
+	}
+	&.parent {}
+	&.comment {}
+	&.children {}
+	&.pingback {}
+	&.bypostauthor {}
+	&.comment-author {}
+	&.comment-author-admin {}
+	&.thread-alt {}
+	&.thread-odd {}
+	&.thread-even {}
+}
+
+
+
+
+	/* comment meta */
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	/* comment content */
+	.comment_content {
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} /* end .commentlist .comment_content */
+
+	/* comment reply link */
+	.comment-reply-link {
+		@extend .blue-btn;
+		font-size: 0.9em;
+		float: right;
+
+		&:hover,
+		&:focus {
+		}
+
+	} /* end .commentlist .comment-reply-link */
+
+	/* edit comment link */
+	.comment-edit-link {
+		font-style: italic;
+		margin: 0 7px 0 0;
+		font-size: 0.9em;
+	}
+
+
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+.comment-respond {
+	@extend .cf;
+	padding: 1em;
+	border-top: 1px solid $light-gray;
+}
+
+	#reply-title {
+		margin: 0;
+	}
+
+	.logged-in-as {
+		color: $meta-gray;
+		font-style: italic;
+		margin: 0;
+
+		a {
+			color: $text-color;
+		}
+	}
+
+	.comment-form {
+		margin: 1.5em 0 0.75em;
+		label {
+			font-family: "Montserrat";
+			display: inline-block;
+			margin-bottom: 0.5em;
+			font-weight: bold;
+		}
+		input {
+			background-color: $form-gray;
+		}
+		textarea {
+			background-color: $form-gray;
+			padding: 0.75em 0;
+			&:focus {
+				background: $form-focus;
+			}
+		}
+	}
+
+	.form-allowed-tags {
+		padding: 1.5em;
+		background-color: $light-gray;
+		font-size: 0.9em;
+	}
+
+	/* comment submit button */
+	#submit {
+		@extend .blue-btn;
+		float: right;
+		font-size: 1em;
+	}
+
+	/* comment form title */
+	#comment-form-title {
+		margin: 0 0 1.1em;
+	}
+
+	/* cancel comment reply link */
+	#cancel-comment-reply {
+		a {}
+	}
+
+	/* logged in comments */
+	.comments-logged-in-as {}
+
+	/* allowed tags */
+	#allowed_tags {
+		margin: 1.5em 10px 0.7335em 0;
+	}
+
+	/* no comments */
+	.nocomments {
+		margin: 0 20px 1.1em;
+	}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	a {
+		&:focus {
+			color: $text-color;
+		}
+	}
+}
+
+	.widgettitle {
+		text-transform: uppercase;
+		font-size: 1.5em;
+		letter-spacing: -0.1px;
+		margin-left: 6px;
+		border-top: 2px solid #444;
+		margin-top: 2em;
+		margin-bottom: 0.25em;
+	}
+	.widget {
+		ul {
+			li {
+				margin-bottom: 0.75em;
+				line-height: 1.3em;
+				a {
+					font-family: $serif;
+					display: block;
+					color: $text-color;
+					padding: 2em;
+					text-align: center;
+					background-color: white;
+					box-shadow: 0 4px 4px -4px rgba(0,0,0,.3);
+					position: relative;
+				  border: none;
+				  overflow: hidden;
+				  z-index: 1;
+					span {
+						display: block;
+				    margin-top: 1em;
+				    color: #9fa6b4;
+				    font-family: $sans-serif;
+					}
+				}
+			}
+		}
+	}
+	.widget_recent_entries {
+		margin-left: -0.375em;
+		margin-right: -0.375em;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 0;
+			li {
+				margin: 0.375em;
+				flex: 1;
+				flex-basis: 230px;
+				display: flex;
+				a {
+					flex: 1;
+				}
+			}
+		}
+	}
+
+	.no-widgets {
+		background-color: $white;
+		padding: 1.5em;
+		text-align: center;
+		border: 1px solid $border-color;
+		border-radius: 2px;
+		margin-bottom: 1.5em;
+	}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.searchform {
+	> div {
+		display: flex;
+		input {
+			margin-right: 0.75em;
+  		flex: 1 1 calc(50% - 0.375em);
+			height: auto;
+			margin-bottom: inherit;
+			-webkit-appearance: none;
+			line-height: 22px;
+		}
+		button {
+			flex: 1 1 calc(30% - 0.375em);
+		}
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.colophon {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	p {
+		text-align: center;
+	}
+}
+.footer {
+	clear: both;
+	background-color: $black;
+	color: $light-gray;
+	padding: 36px 0;
+	overflow-wrap: break-word;
+	.nav {
+		li {
+			flex: 1;
+		}
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.footer-nav {
+		display: flex;
+		.menu-parent > a {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+}
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+		font-size: 0.9375em;
+		flex: 1;
+		.menu-parent {
+			> a {
+				font-family: $serif;
+				padding-bottom: 10px;
+				letter-spacing: -0.2px;
+			}
+		}
+		ul {
+
+			li {
+				a {
+					padding: 0.25em 0;
+				}
+				ul.sub-menu {
+					li {
+						a {
+							padding-left: 0;
+						}
+					}
+				}
+			}
+
+		}
+
+	} /* end .footer-links */
+
+
+	.copyright {}
