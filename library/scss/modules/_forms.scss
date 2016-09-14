@@ -55,6 +55,7 @@ textarea,
   background-color: white;
   box-sizing: border-box;
   border: 1px solid rgba(230,233,237,1);
+  -webkit-appearance: none;
   @include transition(background-color 0.24s ease-in-out);
 
   // a focused input (or hovered on)
