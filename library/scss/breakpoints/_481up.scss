@@ -22,6 +22,15 @@ anymore, so just be aware that if you drop
 them in here, they won't work.
 */
 
+/*********************
+HEADER STYLES
+*********************/
+
+#logo {
+	img {
+		width: 200px;
+	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -74,17 +83,6 @@ NAVIGATION STYLES
 	} /* end .menu */
 
 /*********************
-HEADER STYLES
-*********************/
-
-	.header {
-		margin-bottom: 10px;
-	}
-	.footer {
-		margin-top: 32px;
-	}
-
-/*********************
 POSTS & CONTENT STYLES
 *********************/
 
@@ -116,6 +114,9 @@ POSTS & CONTENT STYLES
 FOOTER STYLES
 *********************/
 
+.footer {
+	margin-top: 32px;
+}
 /*
 check your menus here. do they look good?
 do they need tweaking?

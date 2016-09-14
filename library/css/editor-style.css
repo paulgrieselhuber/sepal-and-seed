@@ -609,9 +609,12 @@ body#tinymce.wp-editor {
     letter-spacing: 2px; }
   body#tinymce.wp-editor p {
     margin: 0 0 1.5em; }
-  body#tinymce.wp-editor ul {
+  body#tinymce.wp-editor ul,
+  body#tinymce.wp-editor ol {
     list-style-type: disc;
     padding-left: 40px; }
+  body#tinymce.wp-editor ol {
+    list-style-type: decimal; }
   body#tinymce.wp-editor table {
     width: 100%;
     border: 1px solid #eaedf1;

@@ -25,9 +25,6 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
-// .home .wrap {
-// 	width: 98%;
-// }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $serif;
 }
@@ -165,6 +162,7 @@ HEADER STYLES
 *********************/
 
 .header {
+	margin-bottom: 10px;
 	background-color: $black;
 	.header-content {
 			display: flex;
@@ -177,9 +175,9 @@ HEADER STYLES
 	#logo {
 		margin: 0.75em 0;
 		font-size: 1.5em;
-		flex: 1 0 90%;
+		flex: 1 0 80%;
 		img {
-			max-width: 30%;
+			max-width: 50%;
 		}
 	}
 
@@ -340,12 +338,9 @@ nav.main-menu {
 POSTS & CONTENT STYLES
 *********************/
 
-#content {
-	margin-top: 1.5em;
-}
-
 		.hentry {
 			background-color: $white;
+			border: 1px solid $light-border;
 			margin-bottom: 1.5em;
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -631,7 +626,7 @@ PAGE NAVI STYLES
       white-space: nowrap;
       padding: 0;
       clear: both;
-      border-radius: 3px;
+      border-radius: 5px;
     }
 
     li {
@@ -640,7 +635,8 @@ PAGE NAVI STYLES
       float: left;
       display: inline;
       overflow: hidden;
-      border-right: 1px solid $gray;
+      border: 1px solid $light-border;
+			border-right: 0px;
     }
 
     a, span {
@@ -977,6 +973,7 @@ SIDEBARS & ASIDES
 			li {
 				margin-bottom: 0.75em;
 				line-height: 1.3em;
+				border: 1px solid $light-border;
 				a {
 					font-family: $serif;
 					display: block;

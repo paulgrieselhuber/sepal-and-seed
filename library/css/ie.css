@@ -185,6 +185,12 @@ anymore, so just be aware that if you drop
 them in here, they won't work.
 */
 /*********************
+HEADER STYLES
+*********************/
+#logo img {
+  width: 200px; }
+
+/*********************
 NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */
@@ -205,15 +211,6 @@ NAVIGATION STYLES
         */ }
 
 /* end .menu */
-/*********************
-HEADER STYLES
-*********************/
-.header {
-  margin-bottom: 10px; }
-
-.footer {
-  margin-top: 32px; }
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -238,6 +235,9 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
+.footer {
+  margin-top: 32px; }
+
 /*
 check your menus here. do they look good?
 do they need tweaking?
@@ -357,7 +357,7 @@ SIDEBARS & ASIDES
   margin-left: 0; }
 
 .widget {
-  padding: 0 10px;
+  padding: 0 0 0 10px;
   margin: 2.2em 0; }
   .widget ul li {
     margin-bottom: 0.75em;

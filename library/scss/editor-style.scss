@@ -107,9 +107,14 @@ body#tinymce.wp-editor {
 			margin: 0 0 1.5em;
 		}
 
-		ul {
+		ul,
+		ol {
 			list-style-type: disc;
 			padding-left: 40px;
+		}
+
+		ol {
+	    list-style-type: decimal;
 		}
 
 		table {

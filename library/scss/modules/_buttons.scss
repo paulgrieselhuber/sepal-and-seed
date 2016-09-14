@@ -38,6 +38,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   border: 0;
   border-radius: 0;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
   @include transition(background-color 0.14s ease-in-out);
 
@@ -67,6 +68,21 @@ and it will create a button dependant on those variables.
   color: white;
   width: 100%;
   padding: 1em 0;
+  &:hover {
+    background-color: lighten($red, 5%);
+  }
+}
+.secondary-btn {
+  @extend %btn;
+  background-color: white;
+  border: 1px solid $red;
+  color: $red;
+  width: 100%;
+  padding: 1em 0;
+  &:hover {
+    background-color: rgba($red, 0.2);
+    color: $red;
+  }
 }
 .comment a.comment-reply-link,
 .comment-form #submit {

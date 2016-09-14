@@ -3,6 +3,7 @@ Wordpress for the Developing World and Low Bandwidth Connections, based on Bones
 
 
 Designed by Paul Grieselhuber
+
 https://www.paulgrieselhuber.com
 
 License: WTFPL
