@@ -110,6 +110,15 @@ POSTS & CONTENT STYLES
 
 } /* end .entry-content */
 
+.hero {
+	.peer-buttons {
+		flex-direction: row;
+		.btn:not(:last-of-type) {
+			margin-bottom: initial;
+		}
+	}
+}
+
 /*********************
 FOOTER STYLES
 *********************/

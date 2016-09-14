@@ -232,6 +232,11 @@ POSTS & CONTENT STYLES
     clear: both; }
 
 /* end .entry-content */
+.hero .peer-buttons {
+  flex-direction: row; }
+  .hero .peer-buttons .btn:not(:last-of-type) {
+    margin-bottom: initial; }
+
 /*********************
 FOOTER STYLES
 *********************/

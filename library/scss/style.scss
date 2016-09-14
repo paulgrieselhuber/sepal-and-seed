@@ -127,7 +127,11 @@ nav li.no-hover {
   display: flex;
   .btn:not(:last-of-type) {
     margin-right: 10px;
+		margin-bottom: 10px;
   }
+	.hero & {
+		flex-direction: column;
+	}
 }
 
 

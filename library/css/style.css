@@ -2082,7 +2082,14 @@ nav li.no-hover > a:focus {
   display: -ms-flexbox;
   display: flex; }
   .peer-buttons .btn:not(:last-of-type) {
-    margin-right: 10px; }
+    margin-right: 10px;
+    margin-bottom: 10px; }
+  .hero .peer-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 /*********************
 BASE (MOBILE) SIZE
@@ -2969,6 +2976,15 @@ tweeners.
       clear: both; }
 
   /* end .entry-content */
+  .hero .peer-buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .hero .peer-buttons .btn:not(:last-of-type) {
+      margin-bottom: initial; }
+
   /*********************
   FOOTER STYLES
   *********************/
