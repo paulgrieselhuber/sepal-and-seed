@@ -2445,8 +2445,7 @@ POSTS & CONTENT STYLES
     padding: 0 0 0 1.625em;
     margin-bottom: 1.4em; }
   .entry-content ul, .entry-content ol {
-    padding-left: 20px;
-    list-style-type: initial; }
+    padding-left: 20px; }
   .entry-content table {
     width: 100%;
     border: 1px solid #eaedf1;
