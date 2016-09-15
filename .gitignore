@@ -4,6 +4,7 @@
 ## Sepal and Seed
 ############
 .codekit-cache
+/node_modules
 
 ############
 ## Bones
