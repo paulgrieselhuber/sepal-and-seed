@@ -1,5 +1,5 @@
 # Sepal and Seed
-Wordpress for the Developing World and Low Bandwidth Connections, based on Bones by Eddie Machado.
+Wordpress for the Developing World and Low Bandwidth Connections, based on Bones by Eddie Machado. https://github.com/eddiemachado/bones
 
 
 Designed by Paul Grieselhuber
