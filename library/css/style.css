@@ -2046,10 +2046,12 @@ nav li.no-hover > a:focus {
 .post ul {
   padding: inherit; }
 
-.post ol {
+.post ol,
+.page ol {
   list-style-type: decimal; }
 
-.post ul {
+.post ul,
+.page ul {
   list-style-type: disc; }
 
 .social i {

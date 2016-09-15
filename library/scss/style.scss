@@ -82,11 +82,13 @@ nav li.no-hover {
 	padding: inherit;
 }
 
-.post ol {
+.post ol,
+.page ol {
 	list-style-type: decimal;
 }
 
-.post ul {
+.post ul,
+.page ul {
   list-style-type: disc;
 }
 
