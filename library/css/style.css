@@ -2016,24 +2016,6 @@ These are the styles for this theme. If you set a great foundation,
 you won't need to add too many styles in the other stylesheets.
 Remember, keep it light: Speed is Important.
 *********************/
-#container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-#content {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
-
 nav li.no-hover > a:hover {
   background: transparent;
   text-decoration: none;

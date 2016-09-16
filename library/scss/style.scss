@@ -55,16 +55,6 @@ you won't need to add too many styles in the other stylesheets.
 Remember, keep it light: Speed is Important.
 *********************/
 
-#container {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
-
-#content {
-	flex: 1;
-}
-
 nav li.no-hover {
 	> a:hover {
 	  background: transparent;
