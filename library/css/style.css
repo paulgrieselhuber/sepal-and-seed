@@ -2056,6 +2056,7 @@ nav li.no-hover > a:focus {
   border: 1px solid #e6e9ed; }
   .hero img {
     max-width: 100%;
+    width: 100%;
     margin-bottom: 5px; }
   .hero h1 {
     margin-top: 0.5em; }
@@ -2164,17 +2165,10 @@ LAYOUT & GRID STYLES
 .wrap {
   width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          justify-content: space-between; }
 
 /*********************
 LINK STYLES
@@ -2325,7 +2319,8 @@ and more scalable.
 /* Rotate first bar */
 .nav-open .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-7px, 7px); }
+  -ms-transform: rotate(-45deg) translate(-7px, 7px);
+      transform: rotate(-45deg) translate(-7px, 7px); }
 
 /* Fade out the second bar */
 .nav-open .bar2 {
@@ -2334,7 +2329,8 @@ and more scalable.
 /* Rotate last bar */
 .nav-open .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -9px); }
+  -ms-transform: rotate(45deg) translate(-8px, -9px);
+      transform: rotate(45deg) translate(-8px, -9px); }
 
 nav.main-menu {
   height: 40px;
@@ -3105,10 +3101,13 @@ tweeners.
     background: #f8f9fa;
     z-index: -1;
     -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
     -webkit-transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
+        -ms-transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
             transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
     -webkit-transform: translateY(10%) translateX(-108%) rotate(-45deg);
+        -ms-transform: translateY(10%) translateX(-108%) rotate(-45deg);
             transform: translateY(10%) translateX(-108%) rotate(-45deg);
     -webkit-transition: -webkit-transform .2s;
     transition: -webkit-transform .2s;
@@ -3116,6 +3115,7 @@ tweeners.
     transition: transform .2s, -webkit-transform .2s; }
   .sidebar .widget ul li a:hover:after {
     -webkit-transform: translateY(10%) translateX(-41%) rotate(-45deg);
+        -ms-transform: translateY(10%) translateX(-41%) rotate(-45deg);
             transform: translateY(10%) translateX(-41%) rotate(-45deg); }
 
   /*********************
@@ -3267,7 +3267,7 @@ you can add resource intensive styles.
   .sidebar {
     margin-top: 2.2em; }
     .sidebar .widget_recent_entries ul {
-      display: initial;
+      display: block;
       -webkit-flex-wrap: initial;
           -ms-flex-wrap: initial;
               flex-wrap: initial; }
