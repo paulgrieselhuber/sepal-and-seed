@@ -2861,9 +2861,9 @@ view.
 .footer-links {
   font-size: 0.9375em;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0;
+          flex: 1 0 0; }
   .footer-links .menu-parent > a {
     font-family: "Montserrat", Cambria, Times New Roman, Times, serif;
     padding-bottom: 10px;
