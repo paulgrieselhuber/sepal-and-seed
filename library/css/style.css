@@ -3190,7 +3190,11 @@ you can add resource intensive styles.
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto; }
     nav.main-menu ul {
       display: -webkit-box;
       display: -webkit-flex;

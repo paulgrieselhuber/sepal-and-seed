@@ -286,7 +286,8 @@ NAVIGATION STYLES
 nav.main-menu {
   flex: initial;
   height: auto;
-  display: flex; }
+  display: flex;
+  flex: 0 1 auto; }
   nav.main-menu ul {
     display: flex; }
     nav.main-menu ul li {
