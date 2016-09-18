@@ -187,9 +187,6 @@ them in here, they won't work.
 /*********************
 HEADER STYLES
 *********************/
-#logo img {
-  width: 200px; }
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -343,7 +340,7 @@ SIDEBARS & ASIDES
 .sidebar {
   margin-top: 2.2em; }
   .sidebar .widget_recent_entries ul {
-    display: initial;
+    display: block;
     flex-wrap: initial; }
     .sidebar .widget_recent_entries ul li {
       margin: 0 0 0.75em 0; }

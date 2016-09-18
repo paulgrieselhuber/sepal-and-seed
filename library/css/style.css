@@ -2236,7 +2236,8 @@ HEADER STYLES
       -ms-flex: 1 0 80%;
           flex: 1 0 80%; }
   #logo img {
-    max-width: 50%; }
+    max-width: 50%;
+    width: 100%; }
 
 /*********************
 NAVIGATION STYLES
@@ -2906,9 +2907,6 @@ tweeners.
   /*********************
   HEADER STYLES
   *********************/
-  #logo img {
-    width: 200px; }
-
   /*********************
   NAVIGATION STYLES
   *********************/
