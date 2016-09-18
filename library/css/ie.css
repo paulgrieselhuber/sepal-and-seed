@@ -405,7 +405,7 @@ mobile. Make sure to double check these!
     justify-content: space-between; }
 
 .footer-links {
-  flex: initial; }
+  flex: 1; }
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
