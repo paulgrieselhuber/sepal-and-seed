@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: wp theme sepal-and-seed\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-01 19:37+0100\n"
 "PO-Revision-Date: \n"
@@ -322,35 +322,35 @@ msgstr "Najnovije sa Themble (Prilagodi u admin.php)"
 #: library/admin.php:123
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
-"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"https://"
+"sepalandseed.com/bones\" target=\"_blank\">Sepal and Seed</a>."
 msgstr ""
 "<span id=\"footer-thankyou\">Razvio <a href=\"http://jurica-zuanovic.from.hr"
 "\" target=\"_blank\">juricazuanovic</a></span>. Izgrađeno koristeći <a href="
 "\"http://hr.wordpress.org\" target=\"_blank\">WordPress</a> i <a href="
-"\"http://themble.com/bones\" target=\"_blank\">Bones</a>."
+"\"https://sepalandseed.com/\" target=\"_blank\">Sepal and Seed</a>."
 
-#: library/bones.php:217 library/bones.php:234
+#: library/sepal-and-seed.php:217 library/sepal-and-seed.php:234
 msgid "The Main Menu"
 msgstr "Glavni Izbornik"
 
-#: library/bones.php:218 library/bones.php:252
+#: library/sepal-and-seed.php:218 library/sepal-and-seed.php:252
 msgid "Footer Links"
 msgstr "Poveznice Podnožja"
 
-#: library/bones.php:296
+#: library/sepal-and-seed.php:296
 msgid "No Related Posts Yet!"
 msgstr "Još nema srodnih postova!"
 
-#: library/bones.php:340
+#: library/sepal-and-seed.php:340
 msgid "First"
 msgstr "Prva"
 
-#: library/bones.php:357
+#: library/sepal-and-seed.php:357
 msgid "Last"
 msgstr "Posljednja"
 
-#: library/bones.php:391
+#: library/sepal-and-seed.php:391
 #, php-format
 msgid "Posts by %s"
 msgstr "Postovi od %s"

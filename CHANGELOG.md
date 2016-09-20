@@ -1,7 +1,7 @@
 #SEPAL AND SEED
 /* 0.1 release */
 
-Throwing it out there
+Throwing it out there...
 
 # BONES CHANGE LOG & HISTORY
 

@@ -11,8 +11,6 @@
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
-
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
@@ -52,7 +50,7 @@
 
 
 						<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-						<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_bloginfo('template_directory') . '/library/images/logo.svg'; ?>" alt="placeholder theme logo, hat tip to clean the air chicago"/></a></p>
+						<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/library/images/logo.svg'; ?>" alt="placeholder theme logo, hat tip to clean the air chicago"/></a></p>
 
 						<?php // if you'd like to use the site description you can un-comment it below ?>
 						<?php // bloginfo('description'); ?>
@@ -66,7 +64,7 @@
 							<?php wp_nav_menu(array(
 	    					         'container' => false,                           // remove nav container
 	    					         'container_class' => 'menu',                 // class of container (should you choose to use it)
-	    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+	    					         'menu' => __( 'The Main Menu', 'sepalandseedtheme' ),  // nav name
 	    					         'menu_class' => 'nav',               // adding custom nav class
 	    					         'theme_location' => 'main-nav',                 // where it's located in the theme
 	    					         'before' => '',                                 // before the menu

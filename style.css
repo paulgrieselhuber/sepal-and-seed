@@ -4,20 +4,26 @@ Theme URI: https://www.sepalandseed.com
 Description: This theme is very fast. The out-of-the-box page / post size is under 50kb. Compare that to 350kb+ for most themes, and you've got a very fast theme. It is also a huge head start for developers, saving them lots of time. Read about the inspiration for the theme <a href="sepal-and-seed-wordpress-for-the-developing-world">here</a>, and the documentation <a href="https://www.paulgrieselhuber.com/">here</a>.
 Author: Paul Grieselhuber
 Author URI: https://www.paulgrieselhuber.com
+Text Domain: sepal-and-seed
 Version: 0.1
-Tags: flexbox, fluid-layout, responsive-layout, accessibility-ready, translation-ready, microformats, rtl-language-support
+Tags: blog, microformats, accessibility-ready, translation-ready, microformats, rtl-language-support
 
 License: WTFPL
 License URI: http://sam.zoy.org/wtfpl/
 Are You Serious? Yes.
 
+IMPORTANT NOTE:
+
+Sepal and Seed is a heavy modification of the theme Bones, by Eddie Machado. Most of the heavy lifting in this theme has been done by him over the course of years. I modified this code base to suit a very specific purpose - making Wordpress sites deliver pages more quickly for low bandwidth connecitons.
+
+Notes from original Bones theme:
 
 MAKE SURE TO READ BELOW BEFORE GETTING STARTED FOR THE FIRST TIME!
 ------------------------------------------------------------------
 
-You may be thinkingâ€¦
+You may be thinking:
 
-WHOA, WHOA, WHOAâ€¦WHAT HAPPENED HERE?
+WHOA, WHOA, WHOA: WHAT HAPPENED HERE?
 
 But before you freak out, let me take a few minutes to explain.
 

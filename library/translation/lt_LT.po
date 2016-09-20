@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: wp theme sepal-and-seed\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-02 17:52+0200\n"
 "PO-Revision-Date: \n"
@@ -220,11 +220,11 @@ msgstr "Tai yra klaidos pranešimas single.php šablone."
 msgid "This is the error message in the taxonomy-custom_cat.php template."
 msgstr "Tai yra klaidos pranešimas taxonomy-custom_cat.php šablone."
 
-#: ../library/bones.php:206
+#: ../library/sepal-and-seed.php:206
 msgid "The Main Menu"
 msgstr "Pagrindinis meniu"
 
-#: ../library/bones.php:207
+#: ../library/sepal-and-seed.php:207
 msgid "Footer Links"
 msgstr "Puslapio apačios nuorodos"
 

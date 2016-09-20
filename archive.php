@@ -20,7 +20,7 @@
 									<h2 class="search-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 															<p class="byline entry-meta vcard">
-																	<?php printf( __( 'Posted %1$s by %2$s', 'bonestheme' ),
+																	<?php printf( __( 'Posted %1$s by %2$s', 'sepalandseedtheme' ),
 																		/* the time the post was published */
 																		'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
 																				/* the author of the post */
@@ -31,36 +31,36 @@
 								</header>
 
 								<section class="entry-content">
-										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'bonestheme' ) . '</span>' ); ?>
+										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'sepalandseedtheme' ) . '</span>' ); ?>
 
 								</section>
 
 								<footer class="article-footer">
 
 									<?php if(get_the_category_list(', ') != ''): ?>
-														<?php printf( __( 'Filed under: %1$s', 'bonestheme' ), get_the_category_list(', ') ); ?>
+														<?php printf( __( 'Filed under: %1$s', 'sepalandseedtheme' ), get_the_category_list(', ') ); ?>
 														<?php endif; ?>
 
-													<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+													<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'sepalandseedtheme' ) . '</span> ', ', ', '</p>' ); ?>
 
 								</footer> <!-- end article footer -->
 							</article>
 
 							<?php endwhile; ?>
 
-									<?php bones_page_navi(); ?>
+									<?php sepal_and_seed_page_navi(); ?>
 
 							<?php else : ?>
 
 									<article id="post-not-found" class="hentry cf">
 										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+											<h1><?php _e( 'Oops, Post Not Found!', 'sepalandseedtheme' ); ?></h1>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'sepalandseedtheme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the archive.php template.', 'sepalandseedtheme' ); ?></p>
 										</footer>
 									</article>
 

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: wp theme sepal-and-seed\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
@@ -129,7 +129,7 @@ msgstr "较新评论 &rarr;"
 msgid "Comments are closed."
 msgstr "评论已关闭"
 
-#: footer.php:9 library/bones.php:217
+#: footer.php:9 library/sepal-and-seed.php:217
 msgid "Footer Links"
 msgstr "底部链接"
 
@@ -162,7 +162,7 @@ msgstr "【编辑】"
 msgid "Your comment is awaiting moderation."
 msgstr "您的评论正等待审核"
 
-#: header.php:61 library/bones.php:216
+#: header.php:61 library/sepal-and-seed.php:216
 msgid "The Main Menu"
 msgstr "主菜单"
 
@@ -190,27 +190,27 @@ msgstr ""
 #: library/admin.php:137
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
-"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"https://"
+"sepalandseed.com/\" target=\"_blank\">Sepal and Seed</a>."
 msgstr ""
 "<span id=\"footer-thankyou\"><a href=\"http://yoursite.com\" target=\"_blank"
-"\">我的站点名称</a></span> 基于 <a href=\"http://themble.com/bones\" target="
-"\"_blank\">Bones</a> 开发。"
+"\">我的站点名称</a></span> 基于 <a href=\"https://sepalandseed.com/\" target="
+"\"_blank\">Sepal and Seed</a> 开发。"
 
-#: library/bones.php:82
+#: library/sepal-and-seed.php:82
 #, php-format
 msgid "Page %s"
 msgstr "第 %s 页"
 
-#: library/bones.php:247
+#: library/sepal-and-seed.php:247
 msgid "No Related Posts Yet!"
 msgstr "还没有相关文章！"
 
-#: library/bones.php:292
+#: library/sepal-and-seed.php:292
 msgid "Read "
 msgstr "阅读"
 
-#: library/bones.php:292 search.php:25
+#: library/sepal-and-seed.php:292 search.php:25
 msgid "Read more &raquo;"
 msgstr "继续阅读 &raquo;"
 

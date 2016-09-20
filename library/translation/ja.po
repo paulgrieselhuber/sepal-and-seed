@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: wp theme sepal-and-seed\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-13 23:41+0900\n"
 "PO-Revision-Date: \n"
@@ -262,7 +262,7 @@ msgstr ""
 msgid "Search Results for:"
 msgstr "検索結果:"
 
-#: ../../search.php:24 ../../library/bones.php:380
+#: ../../search.php:24 ../../library/sepal-and-seed.php:380
 msgid "Read more &raquo;"
 msgstr "もっと読む &raquo;"
 
@@ -323,38 +323,38 @@ msgstr "Thembleの最新ニュース (admin.php のカスタム)"
 #: ../../library/admin.php:125
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
-"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"https://"
+"sepalandseed.com/\" target=\"_blank\">Sepal and Seed</a>."
 msgstr ""
 "<span id=\"footer-thankyou\">開発者: <a href=\"http://yoursite.com\" target="
-"\"_blank\">Your Site Name</a></span>。 <a href=\"http://themble.com/bones\" "
-"target=\"_blank\">Bones</a> を使用。"
+"\"_blank\">Your Site Name</a></span>。 <a href=\"https:/sepalandseed.com/\" "
+"target=\"_blank\">Sepal and Seed</a> を使用。"
 
-#: ../../library/bones.php:213 ../../library/bones.php:230
+#: ../../library/sepal-and-seed.php:213 ../../library/sepal-and-seed.php:230
 msgid "The Main Menu"
 msgstr "メインメニュー"
 
-#: ../../library/bones.php:214 ../../library/bones.php:248
+#: ../../library/sepal-and-seed.php:214 ../../library/sepal-and-seed.php:248
 msgid "Footer Links"
 msgstr "フッターのリンク"
 
-#: ../../library/bones.php:300
+#: ../../library/sepal-and-seed.php:300
 msgid "No Related Posts Yet!"
 msgstr "関連する記事はありません。"
 
-#: ../../library/bones.php:344
+#: ../../library/sepal-and-seed.php:344
 msgid "First"
 msgstr "最初"
 
-#: ../../library/bones.php:361
+#: ../../library/sepal-and-seed.php:361
 msgid "Last"
 msgstr "最後"
 
-#: ../../library/bones.php:380
+#: ../../library/sepal-and-seed.php:380
 msgid "Read"
 msgstr ""
 
-#: ../../library/bones.php:395
+#: ../../library/sepal-and-seed.php:395
 #, php-format
 msgid "Posts by %s"
 msgstr ""

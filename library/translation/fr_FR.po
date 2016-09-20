@@ -113,7 +113,7 @@ msgstr "Les commentaires"
 msgid "Comments are closed."
 msgstr "Les commentaires sont clos."
 
-#: footer.php:9 library/bones.php:215
+#: footer.php:9 library/sepal-and-seed.php:215
 msgid "Footer Links"
 msgstr "Liens du pied de page"
 
@@ -146,7 +146,7 @@ msgstr "(Editer)"
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération"
 
-#: header.php:62 library/bones.php:214
+#: header.php:62 library/sepal-and-seed.php:214
 msgid "The Main Menu"
 msgstr "Le Menu Principal"
 
@@ -178,27 +178,27 @@ msgstr "Récemment sur Themble (Changer dans le fichier admin.php)"
 #: library/admin.php:141
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
-"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"https://"
+"sepalandseed.com/\" target=\"_blank\">Sepal and Seed</a>."
 msgstr ""
 "<span id=\"footer-thankyou\">Developpé par <a href=\"http://votresite.com\" "
-"target=\"_blank\">Votre Nom</a></span>. Thème basé sur <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"target=\"_blank\">Votre Nom</a></span>. Thème basé sur <a href=\"https://"
+"sepalandseed.com/\" target=\"_blank\">Sepal and Seed</a>."
 
-#: library/bones.php:80
+#: library/sepal-and-seed.php:80
 #, php-format
 msgid "Page %s"
 msgstr "Page %s"
 
-#: library/bones.php:245
+#: library/sepal-and-seed.php:245
 msgid "No Related Posts Yet!"
 msgstr "Aucun article en rapport"
 
-#: library/bones.php:290
+#: library/sepal-and-seed.php:290
 msgid "Read "
 msgstr "Lire"
 
-#: library/bones.php:290 search.php:30
+#: library/sepal-and-seed.php:290 search.php:30
 msgid "Read more &raquo;"
 msgstr "Lire la suite &raquo;"
 

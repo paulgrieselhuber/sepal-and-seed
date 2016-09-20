@@ -10,13 +10,13 @@
 
 							<header class="article-header">
 
-								<h1><?php _e( '404: Looks like we couldn\'t find that page', 'bonestheme' ); ?></h1>
+								<h1><?php _e( '404: Looks like we couldn\'t find that page', 'sepalandseedtheme' ); ?></h1>
 
 							</header>
 
 							<section class="entry-content">
 
-								<p><?php _e( 'Try a quick search to see if the page may have moved.', 'bonestheme' ); ?></p>
+								<p><?php _e( 'Try a quick search to see if the page may have moved.', 'sepalandseedtheme' ); ?></p>
 
 							</section>
 
@@ -28,7 +28,7 @@
 
 							<footer class="article-footer">
 
-									<p><?php _e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
+									<p><?php _e( 'This is the 404.php template.', 'sepalandseedtheme' ); ?></p>
 
 							</footer>
 

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: wp theme sepal-and-seed\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
@@ -247,7 +247,7 @@ msgstr "Desculpa, mas o recurso pedido não se encontra disponível neste site."
 msgid "Please activate some Widgets."
 msgstr "Por favor active alguns Widgets."
 
-#: library/bones.php:52
+#: library/sepal-and-seed.php:52
 msgid "Read more &raquo;"
 msgstr "Ler mais &raquo;"
 

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: wp theme sepal-and-seed\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-02 15:22+0100\n"
 "PO-Revision-Date: \n"
@@ -255,7 +255,7 @@ msgstr "Dit is de foutmelding in het page.php sjabloon."
 msgid "Search Results for:"
 msgstr "Zoekresultaten voor:"
 
-#: ../../search.php:24 ../../library/bones.php:350
+#: ../../search.php:24 ../../library/sepal-and-seed.php:350
 msgid "Read more &raquo;"
 msgstr "Lees meer &raquo;"
 
@@ -317,30 +317,30 @@ msgstr "Onlangs op Themble (Pas aan in admin.php)"
 #: ../../library/admin.php:125
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
-"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"https://"
+"sepalandseed.com/\" target=\"_blank\">Sepal and Seed</a>."
 msgstr ""
 "<span id=\"footer-thankyou\">Ontwikkeld door <a href=\"http://yoursite.com\" "
 "target=\"_blank\">Naam Van Jouw Website</a></span>. Gemaakt met <a href="
-"\"http://themble.com/bones\" target=\"_blank\">Bones</a>."
+"\"https://sepalandseed.com/\" target=\"_blank\">Sepal and Seed</a>."
 
-#: ../../library/bones.php:213 ../../library/bones.php:230
+#: ../../library/sepal-and-seed.php:213 ../../library/sepal-and-seed.php:230
 msgid "The Main Menu"
 msgstr "Het Hoofd Menu"
 
-#: ../../library/bones.php:214 ../../library/bones.php:248
+#: ../../library/sepal-and-seed.php:214 ../../library/sepal-and-seed.php:248
 msgid "Footer Links"
 msgstr "Voeter Links"
 
-#: ../../library/bones.php:302
+#: ../../library/sepal-and-seed.php:302
 msgid "No Related Posts Yet!"
 msgstr "Nog Geen Gerelateerde Berichten!"
 
-#: ../../library/bones.php:350
+#: ../../library/sepal-and-seed.php:350
 msgid "Read"
 msgstr "Lezen"
 
-#: ../../library/bones.php:365
+#: ../../library/sepal-and-seed.php:365
 #, php-format
 msgid "Posts by %s"
 msgstr "Berichten door %s"

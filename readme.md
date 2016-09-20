@@ -11,8 +11,8 @@ License URI: http://sam.zoy.org/wtfpl/
 Are You Serious? Yes.
 
 #### Special Thanks to:
-Eddie Machado
-Michael Karliner
+Eddie Machado - He has done many times more effort on the starter theme Bones than I have on Sepal and Seed.
+Michael Karliner - For encouraging me to pursue the idea
 
 From Bones:
 Paul Irish & the HTML5 Boilerplate
